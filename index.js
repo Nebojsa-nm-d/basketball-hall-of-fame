@@ -1,14 +1,25 @@
 const express = require("express");
 const path = require("path");
+var exphbs = require("express-handlebars");
+const players = require("./Players");
 
 const app = express();
+
+// Handlebars Middleware
+app.engine("handlebars", exphbs());
+app.set("view engine", "handlebars");
 
 // Body Parser Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Set static folder
-app.use(express.static(path.join(__dirname, "public")));
+// Homepage Route
+app.get("/", (req, res) =>
+	res.render("index", {
+		title: "Basketball Hall of Fame",
+		players,
+	})
+);
 
 // Players API routes
 app.use("/api/players", require("./routes/api/players"));
