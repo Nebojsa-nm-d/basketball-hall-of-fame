@@ -2,6 +2,7 @@ const players = [
 	{
 		id: "michael-jordan",
 		name: "Michael Jordan",
+		team: "Chicago Bulls",
 		points: 32292,
 		assists: 5633,
 		rebounds: 6672,
@@ -9,10 +10,12 @@ const players = [
 		blocks: 893,
 		nbaTitles: "6x (1991, 1992, 1993, 1996, 1997, 1998)",
 		mvpTitles: "5x (1988, 1991, 1992, 1996, 1998)",
+		image: "michael-jordan.jpg",
 	},
 	{
 		id: "hakeem-olajuwon",
 		name: "Hakeem Olajuwon",
+		team: "Houston Rockets",
 		points: 26946,
 		assists: 3058,
 		rebounds: 13748,
@@ -20,10 +23,12 @@ const players = [
 		blocks: 3830,
 		nbaTitles: "2x (1994, 1995)",
 		mvpTitles: "1x (1994)",
+		image: "hakeem-olajuwon.jpg",
 	},
 	{
 		id: "kobe-bryant",
 		name: "Kobe Bryant",
+		team: "Los Angeles Lakers",
 		points: 33643,
 		assists: 6306,
 		rebounds: 7047,
@@ -31,6 +36,7 @@ const players = [
 		blocks: 640,
 		nbaTitles: "5× (2000–2002, 2009, 2010)",
 		mvpTitles: "1x (2008)",
+		image: "kobe-bryant.jpg",
 	},
 ];
 
