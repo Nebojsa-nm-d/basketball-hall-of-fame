@@ -16,4 +16,27 @@ router.get("/:id", (req, res) => {
 	}
 });
 
+// Creating Player
+router.post("/", (req, res) => {
+	const newPlayer = {
+		id: req.body.id,
+		name: req.body.name,
+		team: req.body.team,
+		points: req.body.points,
+		assists: req.body.assists,
+		rebounds: req.body.rebounds,
+		steals: req.body.steals,
+		blocks: req.body.blocks,
+		nbaTitles: req.body.nbaTitles,
+		mvpTitles: req.body.mvpTitles,
+	};
+
+	if (!newPlayer.id || !newPlayer.name) {
+		return res.status(400).json({ message: "Please enter a player id and name" });
+	}
+
+	players.push(newPlayer);
+	res.json(players);
+});
+
 module.exports = router;
