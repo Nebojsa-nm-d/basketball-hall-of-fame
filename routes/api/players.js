@@ -39,4 +39,29 @@ router.post("/", (req, res) => {
 	res.json(players);
 });
 
+// Update single players
+router.put("/:id", (req, res) => {
+	const found = players.some((player) => player.id === req.params.id);
+
+	if (found) {
+		const updatePlayer = req.body;
+		players.forEach((player) => {
+			if (player.id === req.params.id) {
+				player.team = updatePlayer.team ? updatePlayer.team : player.team;
+				player.points = updatePlayer.points ? updatePlayer.points : player.points;
+				player.assists = updatePlayer.assists ? updatePlayer.assists : player.assists;
+				player.rebounds = updatePlayer.rebounds ? updatePlayer.rebounds : player.rebounds;
+				player.steals = updatePlayer.steals ? updatePlayer.steals : player.steals;
+				player.blocks = updatePlayer.blocks ? updatePlayer.blocks : player.blocks;
+				player.nbaTitles = updatePlayer.nbaTitles ? updatePlayer.nbaTitles : player.nbaTitles;
+				player.mvpTitles = updatePlayer.mvpTitles ? updatePlayer.mvpTitles : player.mvpTitles;
+
+				res.json({ message: "This player data has been updated", player });
+			}
+		});
+	} else {
+		res.status(400).json({ message: "This player is not in Hall of Fame" });
+	}
+});
+
 module.exports = router;
