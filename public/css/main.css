@@ -1,0 +1,13 @@
+.banner {
+  background: #e2610a;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem; }
+  .banner h1 {
+    font-family: "Bungee Inline", cursive;
+    font-size: 5rem; }
+
+.player__image {
+  text-align: center; }
