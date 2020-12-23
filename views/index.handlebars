@@ -1,12 +1,14 @@
-<div class="container-fluid">
+<div class="banner">
   <h1>{{title}}</h1>
 </div>
 
 <div class="container">
   <div class="row">
     {{#each players}}
-    <div class="col-sm-4">
-      <img src="images/{{this.image}}" alt="">
+    <div class="col-sm-4 player">
+      <div class="player__image">
+        <img src="images/{{this.image}}" alt="{{this.image}}">
+      </div>
       <h2>{{this.name}}</h2>
       <h4>Team: {{this.team}}</h4>
       <p>Points: {{this.points}}</p>
