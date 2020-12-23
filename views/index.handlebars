@@ -1,7 +1,22 @@
-<h1>{{title}}</h1>
-<h4>Players</h4>
-<ul>
-  {{#each players}}
-  <li>{{this.name}}</li>
-  {{/each}}
-</ul>
+<div class="container-fluid">
+  <h1>{{title}}</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    {{#each players}}
+    <div class="col-sm-4">
+      <img src="images/{{this.image}}" alt="">
+      <h2>{{this.name}}</h2>
+      <h4>Team: {{this.team}}</h4>
+      <p>Points: {{this.points}}</p>
+      <p>assists: {{this.assists}}</p>
+      <p>rebounds: {{this.rebounds}}</p>
+      <p>steals: {{this.steals}}</p>
+      <p>blocks: {{this.blocks}}</p>
+      <p>Number of NBA Titles: {{this.nbaTitles}}</p>
+      <p>Number of MVP Titles: {{this.mvpTitles}}</p>
+    </div>
+    {{/each}}
+  </div>
+</div>
