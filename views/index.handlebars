@@ -3,19 +3,19 @@
 </div>
 
 <div class="container">
-  <div class="row">
+  <div class="players">
     {{#each players}}
-    <div class="col-sm-4 player">
+    <div class="player">
       <div class="player__image">
         <img src="images/{{this.image}}" alt="{{this.image}}">
       </div>
       <h2>{{this.name}}</h2>
-      <h4>Team: {{this.team}}</h4>
+      <p>Team: {{this.team}}</p>
       <p>Points: {{this.points}}</p>
-      <p>assists: {{this.assists}}</p>
-      <p>rebounds: {{this.rebounds}}</p>
-      <p>steals: {{this.steals}}</p>
-      <p>blocks: {{this.blocks}}</p>
+      <p>Assists: {{this.assists}}</p>
+      <p>Rebounds: {{this.rebounds}}</p>
+      <p>Steals: {{this.steals}}</p>
+      <p>Blocks: {{this.blocks}}</p>
       <p>Number of NBA Titles: {{this.nbaTitles}}</p>
       <p>Number of MVP Titles: {{this.mvpTitles}}</p>
     </div>
