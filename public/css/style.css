@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; }
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden; }
+
+.banner {
+  background: #e2610a;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem; }
+  .banner h1 {
+    font-family: "Bungee Inline", cursive;
+    font-size: 5rem; }
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  gap: 2rem; }
+
+.player {
+  border: 1px solid #333;
+  padding: 2rem 3rem; }
+  .player__image {
+    text-align: center;
+    margin-bottom: 1rem; }
+    .player__image img {
+      border-radius: 50%; }
+  .player h2 {
+    text-align: center;
+    margin-bottom: 0.5rem; }
+  .player p {
+    margin-bottom: 0.3rem; }
+
+/*# sourceMappingURL=style.css.map */
