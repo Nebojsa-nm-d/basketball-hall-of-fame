@@ -2,8 +2,10 @@
 $primary-color: #e2610a
 $light-color: #fff
 $dark-color: #333
+
 // Website Width
 $website-width: 1200px
+
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300;1,400&display=swap")
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap")
@@ -53,5 +55,24 @@ $website-width: 1200px
     text-align: center
     margin-bottom: 0.5rem
 
-  p
-    margin-bottom: 0.3rem
+  &__stats
+    min-height: 18rem
+
+    p
+      margin-bottom: 0.3rem
+
+  &__btn
+    display: flex
+    justify-content: center
+    text-align: center
+
+    a
+      text-decoration: none
+      background: $primary-color
+      color: $light-color
+      display: flex
+      justify-content: center
+      text-align: center
+      align-items: center
+      height: 50px
+      width: 150px

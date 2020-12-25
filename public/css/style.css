@@ -40,7 +40,23 @@
   .player h2 {
     text-align: center;
     margin-bottom: 0.5rem; }
-  .player p {
-    margin-bottom: 0.3rem; }
+  .player__stats {
+    min-height: 18rem; }
+    .player__stats p {
+      margin-bottom: 0.3rem; }
+  .player__btn {
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+    .player__btn a {
+      text-decoration: none;
+      background: #e2610a;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      height: 50px;
+      width: 150px; }
 
 /*# sourceMappingURL=style.css.map */
