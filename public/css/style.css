@@ -11,6 +11,22 @@
   margin: auto;
   overflow: hidden; }
 
+.btn {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+  .btn__value {
+    background: #e2610a;
+    color: #fff;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    border: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none; }
+
 .banner {
   background: #e2610a;
   height: 50vh;
@@ -44,19 +60,27 @@
     min-height: 18rem; }
     .player__stats p {
       margin-bottom: 0.3rem; }
-  .player__btn {
-    display: flex;
-    justify-content: center;
+
+.form {
+  margin: 3rem auto;
+  max-width: 500px; }
+  .form h2 {
     text-align: center; }
-    .player__btn a {
-      text-decoration: none;
-      background: #e2610a;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-      height: 50px;
-      width: 150px; }
+  .form__field {
+    width: 100%;
+    margin-bottom: 0.5rem; }
+    .form__field label {
+      display: block; }
+    .form__field input {
+      width: 100%;
+      height: 2rem; }
+    .form__field--stats {
+      display: grid;
+      grid-template-columns: repeat(5, 5fr);
+      gap: 0.5rem; }
+    .form__field--titles {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      gap: 0.5rem; }
 
 /*# sourceMappingURL=style.css.map */
