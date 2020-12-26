@@ -29,6 +29,7 @@ router.post("/", (req, res) => {
 		blocks: req.body.blocks,
 		nbaTitles: req.body.nbaTitles,
 		mvpTitles: req.body.mvpTitles,
+		image: "no-image.png",
 	};
 
 	if (

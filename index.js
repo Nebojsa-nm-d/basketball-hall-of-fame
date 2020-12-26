@@ -21,6 +21,7 @@ app.get("/", (req, res) =>
 	res.render("index", {
 		title: "Basketball Hall of Fame",
 		players,
+		addPlayerTitle: "Add new Hall of Famer",
 	})
 );
 
