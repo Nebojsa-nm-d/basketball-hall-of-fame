@@ -7,7 +7,7 @@
 		"start": "node index",
 		"dev": "nodemon index"
 	},
-	"keywords": [],
+	"keywords": ["express", "grunt", "express-handlebars", "sass"],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
