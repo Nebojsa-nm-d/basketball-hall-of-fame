@@ -8,8 +8,8 @@ const players = [
 		rebounds: 6672,
 		steals: 2514,
 		blocks: 893,
-		nbaTitles: "6x (1991, 1992, 1993, 1996, 1997, 1998)",
-		mvpTitles: "5x (1988, 1991, 1992, 1996, 1998)",
+		nbaTitles: 6,
+		mvpTitles: 5,
 		image: "michael-jordan.jpg",
 	},
 	{
@@ -21,8 +21,8 @@ const players = [
 		rebounds: 13748,
 		steals: 2162,
 		blocks: 3830,
-		nbaTitles: "2x (1994, 1995)",
-		mvpTitles: "1x (1994)",
+		nbaTitles: 2,
+		mvpTitles: 1,
 		image: "hakeem-olajuwon.jpg",
 	},
 	{
@@ -34,8 +34,8 @@ const players = [
 		rebounds: 7047,
 		steals: 1944,
 		blocks: 640,
-		nbaTitles: "5× (2000–2002, 2009, 2010)",
-		mvpTitles: "1x (2008)",
+		nbaTitles: 5,
+		mvpTitles: 1,
 		image: "kobe-bryant.jpg",
 	},
 ];
