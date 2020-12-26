@@ -26,4 +26,40 @@
     </div>
     {{/each}}
   </div>
+
+  <form action="/api/players" method="POST" class="form">
+    <div class="form__field">
+      <label for="id">ID</label>
+      <input type="text" id="id" name="id" required>
+    </div>
+    <div class="form__field">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form__field">
+      <label for="team">Team</label>
+      <input type="text" id="team" name="team" required>
+    </div>
+    <div class="form__field form__field--stats">
+      <label for="points">Points</label>
+      <input type="number" id="points" name="points" required>
+      <label for="assists">Assists</label>
+      <input type="number" id="assists" name="assists" required>
+      <label for="rebounds">Rebounds</label>
+      <input type="number" id="rebounds" name="rebounds" required>
+      <label for="steals">Steals</label>
+      <input type="number" id="steals" name="steals" required>
+      <label for="blocks">Blocks</label>
+      <input type="number" id="blocks" name="blocks" required>
+    </div>
+
+    <div class="form__field">
+      <label for="nba-titles">Number of NBA Titles</label>
+      <input type="number" id="nba-titles" name="nba-titles">
+      <label for="mvp-titles">Number of MVP Titles</label>
+      <input type="number" id="mvp-titles" name="mvp-titles">
+    </div>
+
+    <input type="submit" value="Add Hall of Famer" class="submit-btn">
+  </form>
 </div>
