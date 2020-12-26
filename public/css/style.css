@@ -70,7 +70,8 @@
     width: 100%;
     margin-bottom: 0.5rem; }
     .form__field label {
-      display: block; }
+      display: block;
+      color: #5c5c5c; }
     .form__field input {
       width: 100%;
       height: 2rem; }

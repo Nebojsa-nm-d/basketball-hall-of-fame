@@ -32,16 +32,7 @@ router.post("/", (req, res) => {
 		image: "no-image.png",
 	};
 
-	if (
-		!newPlayer.id ||
-		!newPlayer.name ||
-		!newPlayer.team ||
-		!newPlayer.points ||
-		!newPlayer.assists ||
-		!newPlayer.rebounds ||
-		!newPlayer.steals ||
-		!newPlayer.blocks
-	) {
+	if (!newPlayer.id) {
 		return res.status(400).json({ message: "Please enter required data" });
 	}
 
