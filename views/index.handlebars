@@ -20,14 +20,16 @@
         <p>Number of NBA Titles: {{this.nbaTitles}}</p>
         <p>Number of MVP Titles: {{this.mvpTitles}}</p>
       </div>
-      <div class="player__btn">
-        <a href="/{{this.id}}">View More</a>
+      <div class="btn">
+        <a href="/{{this.id}}" class="btn__value">View More</a>
       </div>
     </div>
     {{/each}}
   </div>
 
+
   <form action="/api/players" method="POST" class="form">
+    <h2>{{addPlayerTitle}}</h2>
     <div class="form__field">
       <label for="id">ID</label>
       <input type="text" id="id" name="id" required>
@@ -41,25 +43,39 @@
       <input type="text" id="team" name="team" required>
     </div>
     <div class="form__field form__field--stats">
-      <label for="points">Points</label>
-      <input type="number" id="points" name="points" required>
-      <label for="assists">Assists</label>
-      <input type="number" id="assists" name="assists" required>
-      <label for="rebounds">Rebounds</label>
-      <input type="number" id="rebounds" name="rebounds" required>
-      <label for="steals">Steals</label>
-      <input type="number" id="steals" name="steals" required>
-      <label for="blocks">Blocks</label>
-      <input type="number" id="blocks" name="blocks" required>
+      <div class="form__stat-field">
+        <label for="points">Points</label>
+        <input type="number" id="points" name="points" required>
+      </div>
+      <div class="form__stat-field">
+        <label for="assists">Assists</label>
+        <input type="number" id="assists" name="assists" required>
+      </div>
+      <div class="form__stat-field">
+        <label for="rebounds">Rebounds</label>
+        <input type="number" id="rebounds" name="rebounds" required>
+      </div>
+      <div class="form__stat-field">
+        <label for="steals">Steals</label>
+        <input type="number" id="steals" name="steals" required>
+      </div>
+      <div class="form__stat-field">
+        <label for="blocks">Blocks</label>
+        <input type="number" id="blocks" name="blocks" required>
+      </div>
     </div>
-
-    <div class="form__field">
-      <label for="nba-titles">Number of NBA Titles</label>
-      <input type="number" id="nba-titles" name="nba-titles">
-      <label for="mvp-titles">Number of MVP Titles</label>
-      <input type="number" id="mvp-titles" name="mvp-titles">
+    <div class="form__field form__field--titles">
+      <div>
+        <label for="nba-titles">Number of NBA Titles</label>
+        <input type="number" id="nba-titles" name="nba-titles">
+      </div>
+      <div>
+        <label for="mvp-titles">Number of MVP Titles</label>
+        <input type="number" id="mvp-titles" name="mvp-titles">
+      </div>
     </div>
-
-    <input type="submit" value="Add Hall of Famer" class="submit-btn">
+    <div class="btn">
+      <input type="submit" value="Add Hall of Famer" class="btn__value">
+    </div>
   </form>
 </div>
