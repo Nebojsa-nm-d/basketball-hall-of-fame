@@ -31,12 +31,21 @@ router.post("/", (req, res) => {
 		mvpTitles: req.body.mvpTitles,
 	};
 
-	if (!newPlayer.id || !newPlayer.name) {
-		return res.status(400).json({ message: "Please enter a player id and name" });
+	if (
+		!newPlayer.id ||
+		!newPlayer.name ||
+		!newPlayer.team ||
+		!newPlayer.points ||
+		!newPlayer.assists ||
+		!newPlayer.rebounds ||
+		!newPlayer.steals ||
+		!newPlayer.blocks
+	) {
+		return res.status(400).json({ message: "Please enter required data" });
 	}
 
 	players.push(newPlayer);
-	res.json(players);
+	res.redirect("/");
 });
 
 // Update single players
