@@ -52,12 +52,13 @@
     text-align: center;
     margin-bottom: 1rem; }
     .player__image img {
-      border-radius: 50%; }
+      border-radius: 50%;
+      height: 12rem; }
   .player h2 {
     text-align: center;
     margin-bottom: 0.5rem; }
   .player__stats {
-    min-height: 18rem; }
+    min-height: 15rem; }
     .player__stats p {
       margin-bottom: 0.3rem; }
 

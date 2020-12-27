@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const players = require("../../Players");
+const players = require("../../json/Players");
 
 // Get all players
 router.get("/", (req, res) => res.json(players));

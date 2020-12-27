@@ -4,14 +4,14 @@ module.exports = function (grunt) {
 		express: {
 			dev: {
 				options: {
-					script: "index.js",
+					script: "src/index.js",
 				},
 			},
 		},
 		sass: {
 			dist: {
 				files: {
-					"public/css/style.css": "public/css/sass/style.sass",
+					"src/public/css/style.css": "src/public/css/sass/style.sass",
 				},
 			},
 		},
