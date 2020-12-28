@@ -85,4 +85,28 @@
       grid-template-columns: repeat(2, 2fr);
       gap: 0.5rem; }
 
+.single-player {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  background: #e2610a;
+  height: 50vh;
+  margin-bottom: 5rem; }
+  .single-player__image {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .single-player__image img {
+      border-radius: 50%;
+      height: 20rem; }
+  .single-player__stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-size: 1.5rem; }
+    .single-player__stats h1 {
+      font-family: "Bungee Inline", cursive;
+      font-size: 3rem; }
+
 /*# sourceMappingURL=style.css.map */

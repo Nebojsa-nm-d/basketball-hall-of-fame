@@ -38,6 +38,7 @@ $website-width: 1200px
     align-items: center
     text-decoration: none
 
+// Homepage
 .banner
   background: $primary-color
   height: 50vh
@@ -107,3 +108,32 @@ $website-width: 1200px
       display: grid
       grid-template-columns: repeat(2, 2fr)
       gap: 0.5rem
+
+// Single Page
+.single-player
+  display: grid
+  grid-template-columns: repeat(2, 2fr)
+  background: $primary-color
+  height: 50vh
+  margin-bottom: 5rem
+
+  &__image
+    display: flex
+    justify-content: center
+    align-items: center
+
+    img
+      border-radius: 50%
+      height: 20rem
+
+  &__stats
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    color: $light-color
+    font-size: 1.5rem
+
+    h1
+      font-family: "Bungee Inline", cursive
+      font-size: 3rem
