@@ -26,6 +26,21 @@ app.get("/", (req, res) =>
 	})
 );
 
+// Players Route
+app.get("/:id", (req, res) => {
+	const found = players.some((player) => player.id === req.params.id);
+
+	if (found) {
+		const singlePlayer = players.filter((player) => player.id === req.params.id);
+		res.render("player", {
+			singlePlayer,
+			updatePlayerTitle: "Update Hall of Famer",
+		});
+	} else {
+		res.status(400).json({ message: "This player is not in Hall of Fame" });
+	}
+});
+
 // Players API routes
 app.use("/api/players", require("./routes/api/players"));
 
