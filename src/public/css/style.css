@@ -87,10 +87,9 @@
 
 .single-player {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: 1fr 2fr;
   background: #e2610a;
-  height: 50vh;
-  margin-bottom: 5rem; }
+  height: 100vh; }
   .single-player__image {
     display: flex;
     justify-content: center;
